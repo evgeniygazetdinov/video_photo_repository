@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  api_go_calc:
+    container_name: calc
+    restart: always
+    image: api_go_calc_image
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/api_calc_go
+
