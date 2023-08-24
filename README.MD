@@ -1,4 +1,4 @@
- calc_api on golang
+repository for video
 ===============
 
 ###### for first run 
@@ -14,9 +14,8 @@ sh start.sh
 
 ___ basic use ___
 ===============
-http://0.0.0.0:8080/api/add/ 
 
-http://0.0.0.0:8080/api/get/ 
+http://0.0.0.0:8081/api/download_by_id/?id=32
 
 
 
