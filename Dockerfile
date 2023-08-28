@@ -17,7 +17,6 @@ WORKDIR /api_calc_go
 RUN ls
 
 RUN go get github.com/gorilla/mux && go get github.com/gorilla/handlers
-RUN chmod +x  entrypoint.sh
 EXPOSE 8080
 
 CMD go run main.go
