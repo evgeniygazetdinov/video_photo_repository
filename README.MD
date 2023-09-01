@@ -9,6 +9,8 @@ sh first_run.sh
 
 sh start.sh
 
+for base init use
+go mod init video_photo_repository
 
 ## Use
 

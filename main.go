@@ -10,8 +10,7 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	// "fmt"
-
-	L "./db"
+ 	"video_photo_repository/db"
 )
 
 
@@ -50,8 +49,7 @@ func main() {
 	router := mux.NewRouter().StrictSlash(true)
 	router.HandleFunc("/api/upload/", upload)
 	router.HandleFunc("/api/download_by_id/", downloadVideo)
-	// fmt.Println(db.S)
-	L.initDb()
+	db.INIT_DB()
 
 	loggedRouter := handlers.LoggingHandler(os.Stdout, router)
 	log.Println("listening on 8081")
